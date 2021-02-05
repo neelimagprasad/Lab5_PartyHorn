@@ -27,7 +27,7 @@ function myPlay() {
 
 
 var slider = document.getElementById("volume-slider");
-var output = document.getElementById("volume-number");
+var output = document.getElementById("volume-number").value;
 slider.addEventListener("input", function() {
 output.innerHTML = slider.value;
 }, false); 
