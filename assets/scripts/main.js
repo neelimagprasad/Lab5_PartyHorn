@@ -6,6 +6,6 @@ button.addEventListener('click', myPlay);
 
 function myPlay() {
   var audio = document.getElementById('horn-sound');
-  event.preventDefault
+  event.preventDefault();
   audio.play();
  } ;
