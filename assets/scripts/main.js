@@ -40,7 +40,7 @@ slider.oninput = function() {
   if(output.value <=33 && output.value > 0){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-1.svg";
   }
-  if(output.value > 33 && output.value <67 0){
+  if(output.value > 33 && output.value <67 ){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-2.svg";
   }
   if(output.value > 66){
