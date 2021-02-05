@@ -16,6 +16,7 @@ function changepic(){
    image.src = "./assets/media/images/car.svg"
 
   }
+}
   
   
 
