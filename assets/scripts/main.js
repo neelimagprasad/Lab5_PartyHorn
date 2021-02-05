@@ -31,7 +31,7 @@ var output = document.getElementById("volume-number");
 output.innerHTML = slider.value;
 
 // use 'change' instead to see the difference in response
-i.addEventListener('slider', function () {
+i.addEventListener('change', function () {
   output.innerHTML = slider.value;
 }, false);
 
