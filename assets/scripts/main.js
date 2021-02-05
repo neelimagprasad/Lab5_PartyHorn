@@ -42,15 +42,19 @@ slider.oninput = function() {
   audio.volume = output.value/100
   if(output.value == 0){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-0.svg";
+    button.disabled = true;
   }
   if(output.value <=33 && output.value > 0){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-1.svg";
+    button.disabled = false;
   }
   if(output.value > 33 && output.value <67 ){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-2.svg";
+    button.disabled = false;
   }
   if(output.value > 66){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-3.svg";
+    button.disabled = false;
   }
 
 }
