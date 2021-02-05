@@ -34,6 +34,8 @@ output.value = slider.value;
 slider.oninput = function() {
   output.value = this.value;
   audio.volume = output.value/100
+  if(output.value == 0)
+    document.getElementById("volume-image").src = "./assets/media/icons/volume-level-0.svg";
 
 }
 
