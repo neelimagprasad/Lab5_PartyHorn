@@ -28,9 +28,9 @@ function myPlay() {
 
 
 var slider = document.getElementById("volume-slider");
-var output = document.getElementById("volume-number").value;
+var output = document.getElementById("volume-number");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  output.value = this.value;
 }
