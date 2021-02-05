@@ -28,10 +28,6 @@ function myPlay() {
 
 var slider = document.getElementById("volume-slider");
 var output = document.getElementById("volume-number");
+slider.addEventListener("input", function() {
 output.innerHTML = slider.value;
-
-// use 'change' instead to see the difference in response
-slider.addEventListener('change', function () {
-  output.innerHTML = slider.value;
-}, false);
-
+}, false); 
