@@ -70,7 +70,7 @@ slider.oninput = function() {
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-0.svg";
     button.disabled = true;
   }
-  if(output.value <=33 && output.value > 0){
+  if(output.value <34 && output.value > 0){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-1.svg";
     button.disabled = false;
   }
