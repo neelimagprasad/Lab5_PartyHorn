@@ -21,7 +21,7 @@ button.addEventListener('click', myPlay);
   }
   if(document.getElementById('radio-car-horn').checked == true)
   {
-   image.src = "./assets/media/images/car-horn.svg"
+   image.src = "./assets/media/images/car.svg"
 
   }
   
