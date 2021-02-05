@@ -14,9 +14,7 @@ function myPlay() {
 
 
 var slider = document.getElementById("volume-slider");
-var output = document.getElementById("volume-grid-container");
-output.innerHTML = slider.value;
+var output = document.getElementById("volume-number");
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+output.addEventListener('volume-slider', updateValue);
+
