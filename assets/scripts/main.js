@@ -32,18 +32,15 @@ function myPlay() {
   if(document.getElementById('radio-air-horn').checked == true)
   {
    audio.src = "./assets/media/audio/air-horn.mp3"
-   image.src = "./assets/media/images/air-horn.svg"
   }
   if(document.getElementById('radio-party-horn').checked == true)
   {
    audio.src = "./assets/media/audio/party-horn.mp3"
-   image.src = "./assets/media/images/party-horn.svg"
 
   }
   if(document.getElementById('radio-car-horn').checked == true)
   {
    audio.src = "./assets/media/audio/car-horn.mp3"
-   image.src = "./assets/media/images/car-horn.svg"
 
   }
   
