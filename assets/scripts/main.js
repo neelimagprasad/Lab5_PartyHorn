@@ -37,6 +37,15 @@ slider.oninput = function() {
   if(output.value == 0){
     document.getElementById("volume-image").src = "./assets/media/icons/volume-level-0.svg";
   }
+  if(output.value <=33 && output.value > 0){
+    document.getElementById("volume-image").src = "./assets/media/icons/volume-level-1.svg";
+  }
+  if(output.value > 33 && output.value <67 0){
+    document.getElementById("volume-image").src = "./assets/media/icons/volume-level-2.svg";
+  }
+  if(output.value > 66){
+    document.getElementById("volume-image").src = "./assets/media/icons/volume-level-3.svg";
+  }
 
 }
 
