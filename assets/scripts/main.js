@@ -8,7 +8,20 @@ document.getElementById("honk-btn").addEventListener("click", function(event){
 button.addEventListener('click', myPlay);
 
 function myPlay() {
-  var audio = document.getElementById('horn-sound');
+  var audio = document.getElementById('horn-sound')
+  if(document.getElementById(radio-air-horn).clicked == true)
+{
+   audio.src = ""./assets/media/audio/air-horn.mp3"
+}
+  if(document.getElementById(radio-party-horn).clicked == true)
+{
+   audio.src = ""./assets/media/audio/party-horn.mp3"
+}
+  if(document.getElementById(radio-car-horn).clicked == true)
+{
+   audio.src = ""./assets/media/audio/car-horn.mp3"
+}
+  
   audio.play();
  } ;
 
