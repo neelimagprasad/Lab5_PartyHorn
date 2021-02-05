@@ -25,8 +25,7 @@ button.addEventListener('click', myPlay);
 
   }
   
-  audio.play();
- } ;
+  
 
 function myPlay() {
   if(document.getElementById('radio-air-horn').checked == true)
