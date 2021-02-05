@@ -2,13 +2,14 @@
 
 // TODO
 var button = document.getElementById('honk-btn'); 
+var audio = document.getElementById('horn-sound');
+
 document.getElementById("honk-btn").addEventListener("click", function(event){
   event.preventDefault()
 });
 button.addEventListener('click', myPlay);
 
 function myPlay() {
-  var audio = document.getElementById('horn-sound')
   if(document.getElementById('radio-air-horn').checked == true)
   {
    audio.src = "./assets/media/audio/air-horn.mp3"
@@ -30,7 +31,7 @@ function myPlay() {
 var slider = document.getElementById("volume-slider");
 var output = document.getElementById("volume-number");
 output.value = slider.value;
-
+document.getElementById("myAudio").volume = output.value
 slider.oninput = function() {
   output.value = this.value;
 }
