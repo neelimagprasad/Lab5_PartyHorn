@@ -26,8 +26,11 @@ function myPlay() {
  } ;
 
 
+
 var slider = document.getElementById("volume-slider");
 var output = document.getElementById("volume-number").value;
-slider.addEventListener("input", function() {
 output.innerHTML = slider.value;
-}, false); 
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
