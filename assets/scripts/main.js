@@ -16,5 +16,5 @@ var slider = document.getElementById("volume-slider");
 var number = document.getElementById("volume-number");
 number.innerHTML = slider.value;
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  number.innerHTML = this.value;
 }
