@@ -29,7 +29,7 @@ function myPlay() {
 
 var slider = document.getElementById("volume-slider");
 var output = document.getElementById("volume-number");
-output.innerHTML = slider.value;
+output.value = slider.value;
 
 slider.oninput = function() {
   output.value = this.value;
