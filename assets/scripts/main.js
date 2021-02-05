@@ -34,4 +34,3 @@ output.value = slider.value;
 slider.oninput = function() {
   output.value = this.value;
 }
-
