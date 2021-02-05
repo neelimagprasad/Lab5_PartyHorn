@@ -9,16 +9,8 @@ document.getElementById("honk-btn").addEventListener("click", function(event){
   event.preventDefault()
 });
 button.addEventListener('click', myPlay);
-
-  if(document.getElementById('radio-air-horn').checked == true)
-  {
-   image.src = "./assets/media/images/air-horn.svg"
-  }
-  if(document.getElementById('radio-party-horn').checked == true)
-  {
-   image.src = "./assets/media/images/party-horn.svg"
-
-  }
+document.getElementById('radio-car-horn').addEventListener('click', changepic);
+function changepic(){
   if(document.getElementById('radio-car-horn').checked == true)
   {
    image.src = "./assets/media/images/car.svg"
