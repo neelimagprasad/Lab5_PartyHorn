@@ -9,15 +9,15 @@ button.addEventListener('click', myPlay);
 
 function myPlay() {
   var audio = document.getElementById('horn-sound')
-  if(document.getElementById('radio-air-horn').clicked == true)
+  if(document.getElementById('radio-air-horn').selected == true)
   {
    audio.src = "./assets/media/audio/air-horn.mp3"
   }
-  if(document.getElementById('radio-party-horn').clicked == true)
+  if(document.getElementById('radio-party-horn').selected == true)
   {
    audio.src = "./assets/media/audio/party-horn.mp3"
   }
-  if(document.getElementById('radio-car-horn').clicked == true)
+  if(document.getElementById('radio-car-horn').selected == true)
   {
    audio.src = "./assets/media/audio/car-horn.mp3"
   }
