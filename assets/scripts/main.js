@@ -33,7 +33,7 @@ var output = document.getElementById("volume-number");
 output.value = slider.value;
 slider.oninput = function() {
   output.value = this.value;
-  audio.volume = (output.value)/100
+  audio.volume = output.value/100
 
 }
 
