@@ -12,9 +12,11 @@ function myPlay() {
   audio.play();
  } ;
 
+
 var slider = document.getElementById("volume-slider");
-var number = document.getElementById("volume-number");
-number.innerHTML = slider.value;
+var output = document.getElementById("volume-number");
+output.innerHTML = slider.value;
+
 slider.oninput = function() {
-  number.innerHTML = this.value;
+  output.innerHTML = this.value;
 }
