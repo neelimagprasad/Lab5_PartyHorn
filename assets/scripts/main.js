@@ -16,6 +16,25 @@ function changepic(){
    image.src = "./assets/media/images/car.svg"
 
   }
+  
+}
+document.getElementById('radio-party-horn').addEventListener('click', changepic2);
+function changepic2(){
+  if(document.getElementById('radio-party-horn').checked == true)
+  {
+   image.src = "./assets/media/images/party-horn.svg"
+
+  }
+  
+}
+document.getElementById('radio-air-horn').addEventListener('click', changepic3);
+function changepic3(){
+  if(document.getElementById('radio-air-horn').checked == true)
+  {
+   image.src = "./assets/media/images/air-horn.svg"
+
+  }
+  
 }
   
   
